@@ -6,7 +6,10 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [
-    tanstackStart({ spa: { enabled: true }, server: { entry: "server" } }),
+    tanstackStart({
+      spa: { enabled: true, prerender: { enabled: false } },
+      server: { entry: "server" },
+    }),
     react(),
     tailwindcss(),
     tsconfigPaths(),

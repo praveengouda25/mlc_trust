@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run build:website",
     "build:website": "vite build",
     "build:erp": "npm run build --prefix latest_ERP",
     "build:dev": "vite build --mode development",
