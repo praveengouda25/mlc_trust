@@ -1,7 +1,7 @@
 const API_BASE_URL =
   import.meta.env["VITE_API_BASE_URL"] || (import.meta.env.DEV ? "http://localhost:5000/api" : "");
-export const ERP_BASE_PATH = "/erp";
-export const ERP_AUTH_URL = `${ERP_BASE_PATH}/auth`;
+export const ERP_AUTH_URL =
+  import.meta.env.VITE_ERP_LOGIN_URL ?? "https://cozy-git-clone.lovable.app/auth";
 
 export type AuthUser = { id: number; name: string; email: string; role: string; status: string };
 export const getAccessToken = () =>

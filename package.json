@@ -4,8 +4,8 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "dev": "node scripts/dev.mjs",
-    "build": "npm run build:website && npm run build:erp",
+    "dev": "vite",
+    "build": "vite build",
     "build:website": "vite build",
     "build:erp": "npm run build --prefix latest_ERP",
     "build:dev": "vite build --mode development",

@@ -18,7 +18,7 @@ npm run dev
 ```
 
 - Website: http://localhost:5173
-- Website login links to ERP auth at http://localhost:5173/erp/auth (proxied to the ERP on port 5174)
+- Website login links directly to the hosted ERP auth page at https://cozy-git-clone.lovable.app/auth
 - ERP directly: http://localhost:5174/auth
 
 ## Production build
@@ -28,4 +28,4 @@ npm run build
 npm run preview
 ```
 
-Vercel builds the website and ERP together and serves ERP under `/erp`. Website Login continues to open `/erp/auth`.
+Vercel builds the website and ERP together and serves ERP under `/erp`. Website Login opens the hosted ERP auth page directly.

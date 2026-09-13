@@ -20,9 +20,9 @@ Public website: `http://localhost:5173`
 SVRST ERP auth: `http://localhost:5174/auth`  
 Public API health: `http://localhost:5000/api/health` when the configured API is running.
 
-Website Login opens the existing ERP authentication. ERP roles and database
-access remain managed by `latest_ERP`; public website registration does not
-create ERP users.
+Website Login opens the hosted ERP authentication at
+`https://cozy-git-clone.lovable.app/auth`. ERP roles and database access remain
+managed by `latest_ERP`; public website registration does not create ERP users.
 
 Set `VITE_API_BASE_URL` in the root `.env` for a deployed API. Razorpay keys
 must remain backend-only. Donations are stored as pending until server-side

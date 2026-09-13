@@ -49,8 +49,9 @@ npm install
 npm run dev
 ```
 
-The ERP development URL is http://localhost:5174. Website Login links to its
-`/auth` route; ERP access remains controlled by the ERP's existing roles.
+The ERP development URL is http://localhost:5174. Website Login opens the
+hosted ERP auth page at https://cozy-git-clone.lovable.app/auth; ERP access
+remains controlled by the ERP's existing roles.
 
 Set `VITE_API_BASE_URL` in the root `.env` when using a deployed backend.
 Keep payment provider keys in the backend only.
